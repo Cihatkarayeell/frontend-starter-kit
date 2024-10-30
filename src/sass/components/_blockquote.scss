@@ -1,0 +1,7 @@
+blockquote {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0 0.5em 1.5em;
+  font-style: italic;
+  border-left: var(--border-2-width) solid var(--color-text-muted);
+}

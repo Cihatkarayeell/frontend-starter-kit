@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+
+  th,
+  td {
+    padding: 0.75em;
+    vertical-align: top;
+  }
+
+  th {
+    font-weight: var(--font-bold);
+    color: var(--color-heading);
+  }
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}

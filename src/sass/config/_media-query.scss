@@ -1,0 +1,125 @@
+// Küçük cihazlar
+@mixin mini {
+  // 359px ve aşağısı
+  @media (max-width: 359px) {
+    @content;
+  }
+}
+
+// XSMALL
+
+@mixin xs {
+  // 480 ve aşağısı
+  @media (max-width: vars.$screen-xs) {
+    @content;
+  }
+}
+
+
+//SMALL
+@mixin sm {
+  // 768px ve aşağısı
+  @media (max-width: vars.$screen-sm) {
+    @content;
+  }
+}
+
+@mixin bigger-than-sm {
+  // 768px ve yukarısı
+  @media (min-width: vars.$screen-sm) {
+    @content;
+  }
+}
+
+@mixin sm-md {
+  // 768px ile 992px arası
+  @media (min-width: vars.$screen-sm) and (max-width: (vars.$screen-md - 1px)) {
+    @content;
+  }
+}
+
+//MEDIUM
+/*
+@mixin smaller-than-md {
+  // 992px ve aşağısı
+  @media (max-width: (vars.$screen-md - 1px)) {
+    @content;
+  }
+}
+*/
+
+@mixin bigger-than-md {
+  // 992px ve yukarısı
+  @media (min-width: vars.$screen-md) {
+    @content;
+  }
+}
+
+@mixin md {
+  // 992px ve aşağısı
+  @media (max-width: (vars.$screen-md - 1px)) {
+    @content;
+  }
+}
+
+@mixin md-lg {
+  // 992px ile 1140px arası
+  @media (min-width: vars.$screen-md) and (max-width: (vars.$screen-lg - 1px)) {
+    @content;
+  }
+}
+
+//LARGE
+/*
+@mixin smaller-than-lg {
+  // 1365px ve aşağısı
+  @media (max-width: (vars.$screen-lg - 1px)) {
+    @content;
+  }
+}
+*/
+
+@mixin bigger-than-lg {
+  // 1140px ve yukarısı
+  @media (min-width: vars.$screen-lg) {
+    @content;
+  }
+}
+
+@mixin lg {
+  // 1140px ve aşağısı
+  @media (max-width: vars.$screen-lg) {
+    @content;
+  }
+}
+
+@mixin lg-xl {
+  // 1140px ile 1440px arası
+  @media (min-width: vars.$screen-lg) and (max-width: (vars.$screen-xl - 1px)) {
+    @content;
+  }
+}
+
+//XLARGE
+/*
+@mixin smaller-than-xl {
+  // 1679px ve aşağısı
+  @media (max-width: (vars.$screen-xl - 1px)) {
+    @content;
+  }
+}
+*/
+
+@mixin bigger-than-xl {
+  // 1440px ve yukarısı
+  @media (min-width: vars.$screen-xl) {
+    @content;
+  }
+}
+
+@mixin xl {
+  // 1440px ve aşağısı
+  @media (max-width: vars.$screen-xl) {
+    @content;
+  }
+}
